@@ -412,8 +412,8 @@ body{
     margin: 0 auto;
 }
 
+/* Header styles start */
 .header {
-    background-color: #000;
     position: fixed;
     top: 0;
     left: 0;
@@ -446,3 +446,13 @@ body{
 .header__link:active{
    opacity: 0.75;
 }
+/* Header styles end */
+
+/* intro styles start */
+.intro {
+   height: 100vh;
+   background: url('../img/intro-bg.jpg') 
+   no-repeat center;
+   background-size: cover;
+}
+/* intro styles end */
