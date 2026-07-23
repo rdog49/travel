@@ -454,5 +454,14 @@ body{
    background: url('../img/intro-bg.jpg') 
    no-repeat center;
    background-size: cover;
+   padding-top: 263px;
+}
+.intro__title {
+   max-width: 619px;
+   font-weight: 500;
+   font-size: 50px;
+   line-height: 60px;
+   color: white;
+   margin-bottom: 22px;
 }
 /* intro styles end */
