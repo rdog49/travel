@@ -535,5 +535,9 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 55px;
+    padding: 0 100px;
+}
+.benefits__cards{
+    grid-column: span 1;
 }
 /* benefits styles end */
