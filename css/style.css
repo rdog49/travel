@@ -393,6 +393,7 @@ textarea {
   src: url('../fonts/lato-v25-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* Main preferences start */
 html{
 box-sizing: border-box;
 }
@@ -415,6 +416,28 @@ body{
     max-width: 1060px;
     margin: 0 auto;
 }
+.wrapper-full{
+    max-width: 1262px;
+    margin: auto;
+}
+.section-title{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.section-title::after{
+    display: block;
+    content: '';
+    width: 253px;
+    height: 3px;
+    background-color: #006DFE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* Main preferences end */
 
 /* Header styles start */
 .header {
@@ -582,3 +605,27 @@ body{
     no-repeat right center;
 } 
 /* benefits styles end */
+
+/* places styles start */
+.places__caption{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+.places__title{
+    margin-right: 15px;
+}
+.places__view-all{
+    font-size: 16px;
+    color: #006DFE;
+    text-decoration: none;
+    background: url(../img/svg/arrow-right-ico.svg) 
+    no-repeat right center;
+    padding-right: 59px;
+}
+.places__view-all:hover, .places__view-all:focus{
+    opacity: 0.65;
+}
+/* places styles end */
