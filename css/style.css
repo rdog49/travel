@@ -532,7 +532,8 @@ body{
     background-color: white;
 }
 .benefits__cards{
-    height: 30vh;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 55px;
 }
 /* benefits styles end */
