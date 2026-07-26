@@ -731,3 +731,13 @@ transform: scale(1.05);
 }
     
 /* Tours styles end */
+
+/* top styles start */
+
+.top{
+    margin-bottom: 86px;
+}
+.top__title{
+    margin-bottom: 54px;
+}
+/* top styles end */
