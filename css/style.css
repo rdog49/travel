@@ -840,4 +840,33 @@ transform: scale(1.05);
     background: #0E1D28;
     padding: 119px 0;
 }
+.footer__item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__logo{
+    width: 50%;
+}
+.footer__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+.footer__menu-title{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+.footer__menu-link{
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+.footer__menu-link:hover, .footer__menu-link:focus, .footer__menu-link:active{
+    opacity: 0.75;
+}
 /* footer styles end */
