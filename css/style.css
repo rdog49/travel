@@ -965,9 +965,11 @@ body {
     position: relative;
     margin-bottom: 45px;
 }
-.top__card-thumb{
+
+.top__card-thumb {
     width: 100%;
 }
+
 .top__card {
     display: flex;
     flex-direction: column;
@@ -1312,10 +1314,12 @@ body {
     .places__card-pic_size_sm {
         height: 230px;
     }
-    .places__view-all{
+
+    .places__view-all {
         margin-bottom: 25px;
     }
-    .places__caption{
+
+    .places__caption {
         margin-bottom: 0;
     }
 
@@ -1347,7 +1351,8 @@ body {
     .top__card {
         grid-column: span 6;
     }
-    .top__card-stats{
+
+    .top__card-stats {
         max-width: 386px;
     }
 
@@ -1363,7 +1368,8 @@ body {
     .footer__nav {
         width: 100%;
     }
-    .footer__menu{
+
+    .footer__menu {
         width: 50%;
         margin-bottom: 24px;
     }
