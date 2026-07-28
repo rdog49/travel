@@ -667,7 +667,8 @@ background: #0E1D28;
 .places__cards{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 .places__card{
     position: relative;
@@ -732,7 +733,7 @@ transform: scale(1.05);
 .tours__tour{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0 108px;
+    grid-column-gap: 108px;
     align-items: center;
     margin-bottom: 77px;
 }
@@ -772,6 +773,12 @@ transform: scale(1.05);
 .top__title{
     margin-bottom: 54px;
 }
+.top__cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 57px;
+    grid-row-gap: 57px;
+}
 .top__card-pic{
     position: relative;
     margin-bottom: 45px;
@@ -779,6 +786,7 @@ transform: scale(1.05);
 .top__card{
     display: flex;
     flex-direction: column;
+    grid-column: span 2;
 }
 .top__card-stats{
     display: flex;
@@ -788,7 +796,7 @@ transform: scale(1.05);
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 386px;
     background: rgba(21, 24, 36, 0.6);
     padding: 16px 25px;
 }
@@ -798,11 +806,6 @@ transform: scale(1.05);
     line-height: 24px;
     color: white;
     margin: 0 auto 0 0;
-}
-.top__cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 57px;
 }
 .top__card-likes{
     font-weight: 500;
@@ -925,10 +928,45 @@ transform: scale(1.05);
     .places__card_size_sm{
         grid-column: span 6;
     }
+    .tours__tour{
+        grid-column-gap: 35px;
+    }
+    .tour__info{
+        padding-left: 0;
+    }
+    .tour__title{
+        margin-bottom: 15px;
+    }
+    .tour__desc{
+        margin-bottom: 15px;
+    }
+    .top__cards{
+        grid-column-gap: 25px;
+        grid-row-gap: 55px;
+    }
+    .top__card{
+        grid-column: span 3;
+        
+    }
+    .top__card-pic{
+        margin-bottom: 25px;
+    }
+    .footer{
+        padding: 60px 0;
+    }
 }
 @media screen and (max-width: 767px) {
+.section-title{
+    margin-bottom: 25px;
+}
+.section-title::after{
+    width: 78px;
+}
 .header__burger{
     display: block;
+}
+.header__wrapper{
+    padding-top: 28px;
 }
 .header__nav{
     width: 100%;
@@ -980,5 +1018,69 @@ transform: scale(1.05);
 .header__nav-close-line:last-child{
     transform: translateY(-50%) rotate(-45deg);
 } 
+.intro{
+    padding-top: 125px;
+}
+.intro__title{
+    font-size: 32px;
+    line-height: 48px;
+}
+.intro__subtitle{
+    font-size: 14px;
+}
+.search-form__field{
+    width: 100%;
+    margin-right: 0;
+    padding-bottom: 12px;
+    background: transparent url(../img/svg/sircle-ico.svg) no-repeat left 2px;
+}
+.search-form__field::placeholder{
+    font-size: 16px;
+}
+.search-form__submit{
+    width: 100%;
+}
+.benefits{
+    margin-bottom: 36px;
+}
+.benefits__card{
+    grid-column: span 3;
+    margin-bottom: 40px;
+}
+.benefits__card-pic{
+    margin-bottom: 20px;
+}
+.benefits__card-title{
+    margin-bottom: 12px;
+}
+.benefits__card-desc{
+    margin-bottom: 20px;
+}
+.places{
+    margin-bottom: 76px;
+}
+.places__card-pic_size_lg, .places__card-pic_size_sm{
+    height: 230px;
+}
+.tour__pic, .tour__info{
+    grid-column: span 2;
+}
+.tour__pic{
+    margin-bottom: 12px;
+}
+.tour__pic_mob-first{
+    grid-row-start: -1;
+}
+.tours__tour{
+    margin-bottom: 50px;
+}
+.tours{
+    margin-bottom: 76px;
+}
 }   
+@media screen and (max-width: 500px){
+.header__nav{
+    padding: 75px 30px;
+}
+}
 /* Media end */
