@@ -1077,6 +1077,15 @@ transform: scale(1.05);
 .tours{
     margin-bottom: 76px;
 }
+.top{
+    margin-bottom: 76px;
+}
+.top__card{
+    grid-column: span 6;
+}
+.top__card-desc{
+    margin-bottom: 15px;
+}
 }   
 @media screen and (max-width: 500px){
 .header__nav{
