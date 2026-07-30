@@ -689,7 +689,9 @@ body {
     color: white;
     margin-bottom: 59px;
 }
-
+.search-form{
+    margin-bottom: 20px;
+}
 .search-form__info {
     display: -webkit-box;
     display: -ms-flexbox;
